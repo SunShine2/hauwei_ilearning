@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content=”telephone=no” name=”format-detection” />
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <title></title>
+    <script>
+        $(function(){
+            $('.topic_share').click(function(){
+                $('.model_mask').show();
+                $('.model_mask').css('opacity',0.5);
+                $('.share_weibo').show().removeClass('model_animation_out').addClass('model_animation_in');
+                $('.cancel').click(function(){
+                    $('.share_weibo').removeClass('model_animation_in').addClass('model_animation_out');
+                    $('.model_mask').hide();
+                });
+                $('.submit').click(function(){
+                    $('.share_weibo').removeClass('model_animation_in').addClass('model_animation_out');
+                    $('.model_mask').hide();
+                });
+            });
+
+            $('.topic_comment_dialog').click(function(){
+                $('.model_mask').show();
+                $('.model_mask').css('opacity',0.5);
+                $('.comment_dialog').show().removeClass('model_animation_out').addClass('model_animation_in');
+                $('.cancel').click(function(){
+                    $('.comment_dialog').removeClass('model_animation_in').addClass('model_animation_out');
+                    $('.model_mask').hide();
+                });
+                $('.submit').click(function(){
+                    $('.comment_dialog').removeClass('model_animation_in').addClass('model_animation_out');
+                    $('.model_mask').hide();
+                });
+            });
+
+            $('.topic_down').click(function(){
+                $('.model_mask').show();
+                $('.model_mask').css('opacity',0.5);
+                $('.down_dialog').show();
+                $('.down_dialog').css('top',($(window).height()-$('.down_dialog').height())/2)
+                $('.down_dialog').removeClass('model_animation_out').addClass('model_animation_in');
+                $('.cancel').click(function(){
+                    $('.down_dialog').removeClass('model_animation_in').addClass('model_animation_out');
+                    $('.model_mask').hide();
+                });
+                $('.submit').click(function(){
+                    $('.down_dialog').removeClass('model_animation_in').addClass('model_animation_out');
+                    $('.model_mask').hide();
+                });
+            });
+
+            $('.down_dialog label').click(function(){
+                $(this).toggleClass('check_on');
+            });
+
+            $('.down_list label').click(function(){
+                var iTotalSize=0;
+                for(var i=0,len= $('.down_one_size').length;i<len;i++){
+                    if($('.down_list label').eq(i).hasClass('check_on')){
+                        iTotalSize+=parseInt($('.down_one_size').eq(i).html());
+                    }
+                }
+                $('.check_size').html(iTotalSize);
+            })
+
+
+            var bCheckAll=false;
+           $('.down_check_all').click(function(){
+               bCheckAll=!bCheckAll;
+               var iTotalSize=0;
+               if(bCheckAll)
+               {
+                   for(var i=0,len= $('.down_one_size').length;i<len;i++){
+                       iTotalSize+=parseInt($('.down_one_size').eq(i).html());
+                   }
+
+               }
+               $('.check_size').html(iTotalSize);
+
+           });
+
+            var bCheckClassAll=false;
+            $('.down_bottom label').click(function(){
+                bCheckClassAll=!bCheckClassAll;
+                if(bCheckClassAll){
+                    $('.down_list label').addClass('check_on');
+                    $('.down_list input').attr('checked',true);
+                }
+                else{
+                    $('.down_list label').removeClass('check_on');
+                    $('.down_list input').attr('checked',false);
+                }
+            });
+
+            $('#star li').click(function(){
+                $('#star a').removeClass('star_on');
+                for(var i= 0,len=$(this).index();i<=len;i++){
+                    $('#star a').eq(i).addClass('star_on');
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<section class="model_mask">
+
+</section>
+<section class="model_dialog share_weibo">
+    <div class="dialog_top">
+        <a class="cancel">取消</a>
+        <a class="submit">提交</a>
+        分享到华为微博
+    </div>
+    <div class="edit_content" contentEditable="true">#Huawei iLearing 移动学习#我在移动歇息客户端发现了一个课程，挺不错的，与大家分享：<span href="#">《下一个倒下的是不是华为》。</span>
+    </div>
+</section>
+<section class="model_dialog comment_dialog">
+    <div class="dialog_top">
+        <a class="cancel">取消</a>
+        <a class="submit">提交</a>
+        评论
+    </div>
+    <div class="edit_content" contentEditable="true">#Huawei iLearing 移动学习#我在移动歇息客户端发现了一个课程，挺不错的，与大家分享：<span href="#">《下一个倒下的是不是华为》。</span>
+    </div>
+    <div class="comment_bottom">
+        <span>评分:</span>
+        <ul class="star clearfix" id="star">
+            <li><a class="star_on"></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+        </ul>
+        <span class="comment_share_weibo">分享到华为微博</span>
+    </div>
+</section>
+
+<section class="model_dialog down_dialog">
+    <div class="dialog_top">
+        <a class="cancel">取消</a>
+        <a class="submit">提交</a>
+        选择课程
+    </div>
+   <div class="down_list">
+        <ul>
+            <li>
+                <label for="down_1"><span>2012-2013 公司领导讲话</span><span class="down_size"><i class="down_one_size">10</i>MB</span><span class="down_suc">已下载</span></label><input type="checkbox" id="down_1">
+            </li>
+            <li>
+                <label for="down_2"><span>2012-2013 公司领导讲话</span><span class="down_size"><i class="down_one_size">10</i>MB</span><span class="down_suc">已下载</span></label><input type="checkbox" id="down_2">
+            </li>
+            <li>
+                <label for="down_3"><span>2012-2013 公司领导讲话</span><span class="down_size"><i class="down_one_size">10</i>MB</span><span class="down_suc">已下载</span></label><input type="checkbox" id="down_3">
+            </li>
+            <li>
+                <label for="down_4"><span>2012-2013 公司领导讲话</span><span class="down_size"><i class="down_one_size">10</i>MB</span><span class="down_suc">已下载</span></label><input type="checkbox" id="down_4">
+            </li>
+            <li>
+                <label for="down_5"><span>2012-2013 公司领导讲话</span><span class="down_size"><i class="down_one_size">10</i>MB</span><span class="down_suc">已下载</span></label><input type="checkbox" id="down_5">
+            </li>
+            <li>
+                <label for="down_6"><span>2012-2013 公司领导讲话</span><span class="down_size"><i class="down_one_size">10</i>MB</span><span class="down_suc">已下载</span></label><input type="checkbox" id="down_6">
+            </li>
+            <li>
+                <label for="down_7"><span>2012-2013 公司领导讲话</span><span class="down_size"><i class="down_one_size">110</i>MB</span><span class="down_suc">已下载</span></label><input type="checkbox" id="down_7">
+            </li>
+        </ul>
+   </div>
+    <div class="down_bottom">
+        <label for="down_all" class="down_check_all">选择全部</label><input type="checkbox" id="down_all" name="down_check_all"><span>已选大小:<i class="check_size">100</i>MB</span>
+    </div>
+</section>
+
+    <!--顶部topbar组件-->
+    <section class="topbar">
+        <a class="btn_back">返回</a>
+        <form action="" method="post" id="search_form">
+            <div class="form_item_search">
+                <a class="btn_search"></a>
+                <input type="search" name="search" id="search" placeholder="搜索课程">
+            </div>
+        </form>
+        <a class="btn_refresh">刷新</a>
+        华为大学ilearning移动学习
+    </section>
+    <!--topbar End    -->
+
+    <section class="topic_main">
+        <div class="topic_detail_list">
+            <section class="topic_list_bar">
+                全部课集<a href="#">专题介绍</a>
+            </section>
+            <ul class="similar_topic">
+                <li>
+                   <div class="similar_topic_img">
+                        <img src="images/topic_list_img.jpg"/>
+                        <a href="#"></a>
+                   </div>
+                    <div class="similar_topic_intro">
+                        <h2><a href="#">第一课：你为何不能成就伟业</a></h2>
+                        <a href="#"></a>
+                        <ul class="star clearfix">
+                            <li><a class="star_on"></a></li>
+                            <li><a class="star_on"></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                        </ul>
+                        <p class="article_icon_group_one clearfix">
+                            <span class="icon_article_down">123</span><span class="icon_view">12313</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="similar_topic_img">
+                        <img src="images/topic_list_img.jpg"/>
+                        <a href="#"></a>
+                    </div>
+                    <div class="similar_topic_intro">
+                        <h2><a href="#">第一课：你为何不能成就伟业</a></h2>
+                        <a href="#"></a>
+                        <ul class="star clearfix">
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                        </ul>
+                        <p class="article_icon_group_one clearfix">
+                            <span class="icon_article_down">123</span><span class="icon_view">12313</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="similar_topic_img">
+                        <img src="images/topic_list_img.jpg"/>
+                        <a href="#"></a>
+                    </div>
+                    <div class="similar_topic_intro">
+                        <h2><a href="#">第一课：你为何不能成就伟业</a></h2>
+                        <a href="#"></a>
+                        <ul class="star clearfix">
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                        </ul>
+                        <p class="article_icon_group_one clearfix">
+                            <span class="icon_article_down">123</span><span class="icon_view">12313</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="similar_topic_img">
+                        <img src="images/topic_list_img.jpg"/>
+                        <a href="#"></a>
+                    </div>
+                    <div class="similar_topic_intro">
+                        <h2><a href="#">第一课：你为何不能成就伟业</a></h2>
+                        <a href="#"></a>
+                        <ul class="star clearfix">
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                        </ul>
+                        <p class="article_icon_group_one clearfix">
+                            <span class="icon_article_down">123</span><span class="icon_view">12313</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="similar_topic_img">
+                        <img src="images/topic_list_img.jpg"/>
+                        <a href="#"></a>
+                    </div>
+                    <div class="similar_topic_intro">
+                        <h2><a href="#">第一课：你为何不能成就伟业</a></h2>
+                        <a href="#"></a>
+                        <ul class="star clearfix">
+                            <li><a class="star_on"></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                            <li><a></a></li>
+                        </ul>
+                        <p class="article_icon_group_one clearfix">
+                            <span class="icon_article_down">123</span><span class="icon_view">12313</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="topic_content">
+            <section class="topic_detail_intro">
+                <a href="#" class="topic_detail_img">
+                    <img src="images/topic_detail_img.jpg"/>
+                </a>
+                <div class="topic_detail_intro_box">
+                    <ul class="star clearfix">
+                        <li><a class="star_on"></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                        <li><a></a></li>
+                    </ul>
+                    <p>共8课</p>
+                    <p><span class="icon_view">12313</span><span class="icon_article_down">123</span></p>
+                    <ul class="btn_group_function">
+                        <li><a class="topic_down"></a></li>
+                        <li><a class="topic_share"></a></li>
+                        <li><a class="topic_comment_dialog"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <p class="topic_detail_describe">
+                简介：TED（指technology, entertainment, design在英语中的缩写，即技术、娱乐、设计）是美国的一家私有非营利机构，该机构以它组织的TED大会著称。TED诞生於1984年，其发起人是里查德·沃曼。TED（指technology, entertainment, design在英语中的缩写，即技术、娱乐、设计）是美国的一家私有非营利机构。
+            </p>
+            <div class="topic_comment">
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/avatar.jpg"/>
+                    </div>
+                    <div class="comment_content_box">
+                        <span class="comment_triangle"></span>
+                        <div class="comment_content">
+                            <p>张三<span>2013 /8/16 16:09</span></p>
+                            <p class="comment_info">The second said, "I have a horse to look after, but I leave the bit in his mouth, and if I do not want to do it,</p>
+                        </div>
+                        <a href="#" class="reply_num">回复(<span>1</span>)</a>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/avatar.jpg"/>
+                    </div>
+                    <div class="comment_content_box">
+                        <span class="comment_triangle"></span>
+                        <div class="comment_content">
+                            <p>张三<span>2013 /8/16 16:09</span></p>
+                            <p class="comment_info">回复<a href="#">张三</a><span>"The second said, "I have a horse to look after, but I leave the bit in his bit sad..."</span>说得很有道理</p>
+                        </div>
+                        <a href="#" class="reply_num">回复(<span>1</span>)</a>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="avatar">
+                        <img src="images/avatar.jpg"/>
+                    </div>
+                    <div class="comment_content_box">
+                        <span class="comment_triangle"></span>
+                        <div class="comment_content">
+                            <p>张三<span>2013 /8/16 16:09</span></p>
+                            <p class="comment_info">The second said, "I have a horse to look after, but I leave the bit in his mouth, and if I do not want to do it,</p>
+                        </div>
+                        <a href="#" class="reply_num">回复(<span>1</span>)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content=”telephone=no” name=”format-detection” />
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <script type="text/javascript" src="js/zepto.js"></script>
+</head>
+<body>
+<!--顶部topbar组件-->
+<section class="topbar">
+    <a class="btn_back">返回</a>
+    <form action="" method="post" id="search_form">
+        <div class="form_item_search">
+            <a class="btn_search"></a>
+            <input type="search" name="search" id="search" placeholder="搜索课程">
+        </div>
+    </form>
+    <a class="btn_refresh">刷新</a>
+    华为大学ilearning移动学习
+</section>
+<!--topbar End    -->
+
+<!--主题内容mainbar组件-->
+<section class="mainbar">
+    <!--左侧nav导航-->
+    <nav class="nav">
+        <ul class="nav_content more_nav">
+            <li><a><span>我的消息</span></a></li>
+            <li><a class="more_nav_active"><span>设置</span></a></li>
+            <li><a><span>关于</span></a></li>
+            <li><a><span>意见反馈</span></a></li>
+        </ul>
+    </nav>
+    <!--nav End-->
+
+    <!--主题内容main-->
+    <section class="main">
+        <h2>消息设置</h2>
+        <div class="setting_box">
+            <form method="post" action="">
+                <div class="setting_toolbar">
+                    课程更新设置
+                     <div class="push_toolbar">
+                        <input type="checkbox" name="" id="checkbox" checked="checked">
+                        <label for="checkbox" data-off="Off" data-on="On" class="push"></label>
+                    </div>
+                </div>
+                <div class="setting_toolbar">
+                    系统设置
+                     <div class="push_toolbar">
+                                <input type="checkbox" name="" id="checkbox-1" checked="checked">
+                                <label for="checkbox-1" data-off="Off" data-on="On" class="push"></label>
+                     </div>
+                </div>
+            </form>
+        </div>
+        <h2 class="setting_like">喜好设置</h2>
+        <div class="setting_box">
+        </div>
+
+    </section>
+    <!--main End-->
+
+</section>
+<!--mainbar End-->
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content=”telephone=no” name=”format-detection” />
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <script type="text/javascript" src="js/zepto.js"></script>
+</head>
+<body>
+<!--顶部topbar组件-->
+<section class="topbar">
+    <a class="btn_back">返回</a>
+    <form action="" method="post" id="search_form">
+        <div class="form_item_search">
+            <a class="btn_search"></a>
+            <input type="search" name="search" id="search" placeholder="搜索课程">
+        </div>
+    </form>
+    <a class="btn_refresh">刷新</a>
+    华为大学ilearning移动学习
+</section>
+<!--topbar End    -->
+
+<!--主题内容mainbar组件-->
+<section class="mainbar">
+    <!--左侧nav导航-->
+    <nav class="nav">
+        <ul class="nav_content">
+            <li><a data-href="view/main.html"><span>主页</span></a></li>
+            <li><a data-href="view/topic.html"><span>专题</span></a></li>
+            <li><a data-href="view/course1.html"><span>课程</span></a></li>
+            <li><a data-href="view/video.html"><span>视频</span></a></li>
+            <li><a data-href="view/my_study.html" class="active"><span>我的学习</span></a></li>
+        </ul>
+        <a class="btn_more">更多<span></span></a>
+    </nav>
+    <!--nav End-->
+
+    <!--主题内容main-->
+    <section class="main">
+       <section class="study_nav">
+            <ul class="study_nav_list">
+                <li class="study_nav_active">
+                    <a class="study_nav_on">我的下载</a>
+                </li>
+                <li>
+                    <a>我的收藏</a>
+                </li>
+                <li>
+                    <a>浏览记录</a>
+                </li>
+            </ul>
+       </section>
+        <section class="study_tab">
+            <div class="study_tab_bar">
+                <ul class="study_tab_nav_list">
+                    <li><a class="study_tab_nav_list_on">全部</a></li>
+                    <li><a>专题</a></li>
+                    <li><a>课程</a></li>
+                    <li><a>视频</a></li>
+                </ul>
+                <a class="setting_edit red_btn">编辑</a>
+            </div>
+            <div class="">
+
+            </div>
+        </section>
+    </section>
+    <!--main End-->
+
+</section>
+<!--mainbar End-->
+</body>
+</html>

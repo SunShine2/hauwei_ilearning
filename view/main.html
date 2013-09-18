@@ -1,0 +1,418 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <script type="text/javascript" src="../js/zepto.js"></script>
+    <script type="text/javascript" src="../js/iscroll.js"></script>
+    <script>
+        $(function(){
+            $('#pagenavi a').click(function(){
+                $('#pagenavi a').removeClass('pagenav_active');
+                $(this).addClass('pagenav_active');
+                var iIndex=$(this).index();
+               // $('#slide').css('left',-iIndex*1770);
+                var iTranslate3d='translate3d('+-(iIndex*1770)+'px, 0, 0)';
+                $('#slide').css('-webkit-transform',iTranslate3d).css('-webkit-transition','800ms ease');
+            });
+            var i=0;
+            var iFocusLen=$('#pagenavi a').length;
+            $('#slide').width($('.slide_item').width()*iFocusLen);
+            $('#slide').swipeRight(function(){
+                if(i<=0)
+                {
+                    i=iFocusLen-1;
+                    var iTranslate3d='translate3d('+-(i*1770)+'px, 0, 0)';
+                    $('#slide').css('-webkit-transform',iTranslate3d).css('-webkit-transition','0ms ease');
+                }
+                else{
+                    i--;
+                    var iTranslate3d='translate3d('+-(i*1770)+'px, 0, 0)';
+                    $('#slide').css('-webkit-transform',iTranslate3d).css('-webkit-transition','800ms ease');
+                }
+                $('#pagenavi a').removeClass('pagenav_active');
+                $('#pagenavi a').eq(i).addClass('pagenav_active');
+            });
+
+            $('#slide').swipeLeft(function(){
+                if(i>=iFocusLen-1)
+                {
+                    i=0;
+                    var iTranslate3d='translate3d('+-(i*1770)+'px, 0, 0)';
+                    $('#slide').css('-webkit-transform',iTranslate3d).css('-webkit-transition','0ms ease');
+                }
+                else{
+                    i++;
+                    var iTranslate3d='translate3d('+-(i*1770)+'px, 0, 0)';
+                    $('#slide').css('-webkit-transform',iTranslate3d).css('-webkit-transition','800ms ease');
+                }
+                $('#pagenavi a').removeClass('pagenav_active');
+                $('#pagenavi a').eq(i).addClass('pagenav_active');
+
+            });
+
+        });
+    </script>
+    <script>
+        var myScroll_one,myScroll_two,myScroll_three;
+        function loaded() {
+            myScroll_one = new iScroll('scroller_one');
+            myScroll_two = new iScroll('scroller_two');
+            myScroll_three = new iScroll('scroller_three');
+        }
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+        document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
+    </script>
+</head>
+<body>
+<!--幻灯片slide组件-->
+<section class="slide">
+    <div class="pagenav" id="pagenavi">
+        <a class="pagenav_active"></a>
+        <a></a>
+        <a></a>
+        <a></a>
+    </div>
+    <div id="slide">
+        <div class="slide_item">
+            <div class="slide_item_description">
+                <p>After</p>
+                <p>Effects</p>
+                <p class="description_main">Create a classic film and television titles liquefaction text effects</p>
+            </div>
+            <div class="slide_item_info">
+                <h2>After Effects1</h2>
+                <p>This tutorial special friends like flying introduce AE to create text effects classic film and television titles liquefied specific processes and methods, tutorials difficulty </p>
+                <div class="video_group">
+                    <a class="icon_play"><span></span><i>详情</i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="slide_item">
+            <div class="slide_item_description">
+                <p>After</p>
+                <p>Effects</p>
+                <p class="description_main">Create a classic film and television titles liquefaction text effects</p>
+            </div>
+            <div class="slide_item_info">
+                <h2>After Effects2</h2>
+                <p>This tutorial special friends like flying introduce AE to create text effects classic film and television titles liquefied specific processes and methods, tutorials difficulty </p>
+                <div class="video_group">
+                    <a class="icon_play"><span></span><i>详情</i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="slide_item">
+            <div class="slide_item_description">
+                <p>After</p>
+                <p>Effects</p>
+                <p class="description_main">Create a classic film and television titles liquefaction text effects</p>
+            </div>
+            <div class="slide_item_info">
+                <h2>After Effects3</h2>
+                <p>This tutorial special friends like flying introduce AE to create text effects classic film and television titles liquefied specific processes and methods, tutorials difficulty </p>
+                <div class="video_group">
+                    <a class="icon_play"><span></span><i>详情</i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="slide_item">
+            <div class="slide_item_description">
+                <p>After</p>
+                <p>Effects</p>
+                <p class="description_main">Create a classic film and television titles liquefaction text effects</p>
+            </div>
+            <div class="slide_item_info">
+                <h2>After Effects4</h2>
+                <p>This tutorial special friends like flying introduce AE to create text effects classic film and television titles liquefied specific processes and methods, tutorials difficulty </p>
+                <div class="video_group">
+                    <a class="icon_play"><span></span><i>详情</i></a>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+
+<!--slide End-->
+
+<!--文章列表article_list组件-->
+<section class="article_list">
+<div class="article_love">
+    <h2 class="title_love">猜你喜欢</h2>
+    <div class="article_list_content" id="scroller_one">
+        <div id="scroller">
+        <ul class="articel_list_item">
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_two">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_three">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_four">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </div>
+        </div>
+</div>
+
+<div class="article_love article_new">
+    <h2 class="title_new">最新更新</h2>
+    <div class="article_list_content" id="scroller_two">
+        <div id="scroller">
+        <ul class="articel_list_item">
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_two">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_three">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_four">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</div>
+
+<div class="article_love article_hot">
+    <h2 class="title_hot">最热课程</h2>
+    <div class="article_list_content" id="scroller_three">
+        <div id="scroller">
+        <ul class="articel_list_item">
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_two">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_three">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_four">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+            <li><a>
+                <img src="../images/index_article_img.jpg" alt="课程图片"/>
+                <div class="article_info">
+                    <p>Daniel (Daniel) of STUDIO - Interior Design Case Tutorial</p>
+                    <p class="article_icon_group article_icon_group_one">
+                        <span class="icon_article_hot">100,100</span>
+                    </p>
+                </div>
+            </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
+</section>
+<!--article End-->
+</body>
+</html>

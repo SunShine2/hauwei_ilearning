@@ -1,0 +1,4688 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content=”telephone=no” name=”format-detection” />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <script type="text/javascript" src="../js/zepto.js"></script>
+    <script src="../js/kontext.js"></script>
+    <script>
+        $(function(){
+            $('.nav_btn_hr').click(function(){
+                $('.nav_btn_hr_dropmenu').toggleClass('dropmenu_animation');
+            });
+
+            var iSliderNavLen=$('.sidernav_slide a').length;
+            var iInnitLen=6;
+            var iClickNum=0;
+            $('.nav_btn_next').click(function(){
+                if( iClickNum <iSliderNavLen-iInnitLen)
+                {
+                    iClickNum++;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum+1).position().left});
+                }
+            });
+
+            $('.sidernav_slide').swipeRight(function(){
+                if(iClickNum>0)
+                {
+                    iClickNum--;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum).position().left});
+                }
+            });
+
+            $('.sidernav_slide').swipeLeft(function(){
+                if( iClickNum <iSliderNavLen-iInnitLen)
+                {
+                    iClickNum++;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum+1).position().left});
+                }
+            });
+            $('.sidernav_slide a').click(function(){
+
+                $('.sidernav_slide a').removeClass('on');
+                $(this).addClass('on');
+
+            });
+
+            $('.btn_group a').click(function(){
+                $('.btn_group a').removeClass('btn_active');
+                $(this).addClass('btn_active');
+            });
+
+            $('.nav_btn_hr_dropmenu a').click(function(){
+                $('.nav_btn_hr i').html($(this).html());
+            });
+            /*筛选功能*/
+
+        });
+
+
+    </script>
+    <title></title>
+</head>
+<body>
+<nav class="sidernav">
+    <div class="btn_group">
+        <a class="btn_new btn_active"></a>
+        <a class="btn_hot"></a>
+        <a class="btn_best"></a>
+    </div>
+    <div class="nav_wrap">
+        <div class="sidernav_box">
+
+            <ul class="sidernav_slide" id="sidernav_slide">
+                <li><a class="on">全部</a></li>
+                <li><a>专业领域</a></li>
+                <li><a>产品领域</a></li>
+                <li><a>流程变革</a></li>
+                <li><a>公司知识</a></li>
+                <li><a>通用技能</a></li>
+                <li><a>管理与领导力</a></li>
+                <li><a>其它</a></li>
+            </ul>
+        </div>
+        <a class="nav_btn_next">next</a>
+    </div>
+    <div class="nav_btn_hr"><i>筛选</i>
+        <span></span>
+        <section class="nav_btn_hr_dropmenu">
+            <a>全部</a>
+            <a>财经</a>
+            <a>人力资源</a>
+            <a>营销</a>
+            <a>项目管理</a>
+            <a>采购</a>
+            <a>技术</a>
+            <a>公共关系</a>
+            <a>法务</a>
+            <a>供应链</a>
+            <a>行政&服务商务</a>
+            <a>流程质量运营</a>
+        </section>
+    </div>
+
+</nav>
+
+<article class="kontext subject">
+<div class="subject_box clearfix layer one show">
+    <ul class="topic_list">
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+    <li>
+        <div class="topic_img_box">
+            <img src="../images/topic_img.jpg" />
+            <p>2012-2013年公司领导讲话</p>
+        </div>
+        <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+    </li>
+</ul>
+</div>
+<div class="subject_box clearfix layer two">
+    <ul class="topic_list">
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer three">
+    <ul class="topic_list">
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="topic_list">
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="topic_list">
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="topic_list">
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="topic_list">
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="topic_list">
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+        <li>
+            <div class="topic_img_box">
+                <img src="../images/topic_img.jpg" />
+                <p>2012-2013年公司领导讲话</p>
+            </div>
+            <p class="topic_info">12课<span class="icon_article_down">123</span><span class="icon_view">12313</span></p>
+        </li>
+    </ul>
+</div>
+</article>
+</body>
+<script>
+    // 获取运动box
+    var k = kontext( document.querySelector( '.kontext' ) );
+    var bulletsContainer = document.body.querySelector( '.bullets' );
+
+    // 导航支持
+    var bullet = document.getElementById('sidernav_slide').getElementsByTagName('a');
+    for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+        bullet[i].className = i === 0 ? 'on' : '';
+        bullet[i].setAttribute( 'index', i );
+        bullet[i].onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) ;
+            for( var i = 0, len = k.getTotal(); i < len; i++ ){
+                bullet[i].className='';
+                this.className='on';
+            }
+        };
+        bullet[i].ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+
+    }
+
+    /*触碰动作*/
+
+
+    var touchX = 0;
+    var touchConsumed = false;
+
+    document.addEventListener( 'touchstart', function( event ) {
+        touchConsumed = false;
+        lastX = event.touches[0].clientX;
+    }, false );
+
+    document.addEventListener( 'touchmove', function( event ) {
+        event.preventDefault();
+
+        if( !touchConsumed ) {
+            if( event.touches[0].clientX > lastX + 10 ) {
+                k.prev();
+                touchConsumed = true;
+            }
+            else if( event.touches[0].clientX < lastX - 10 ) {
+                k.next();
+                touchConsumed = true;
+            }
+        }
+    }, false );
+</script>
+</html><!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content=”telephone=no” name=”format-detection” />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <script type="text/javascript" src="../js/zepto.js"></script>
+    <script src="../js/kontext.js"></script>
+    <script>
+        $(function(){
+
+            $('.nav_btn_hr').click(function(){
+                $('.nav_btn_hr_dropmenu').toggleClass('dropmenu_animation');
+            });
+
+            var iSliderNavLen=$('.sidernav_slide a').length;
+            var iInnitLen=6;
+            var iClickNum=0;
+            $('.nav_btn_next').click(function(){
+                if( iClickNum <iSliderNavLen-iInnitLen)
+                {
+                    iClickNum++;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum+1).position().left});
+                }
+            });
+
+            $('.sidernav_slide').swipeRight(function(){
+                if(iClickNum>0)
+                {
+                    iClickNum--;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum).position().left});
+                }
+            });
+
+            $('.sidernav_slide').swipeLeft(function(){
+                if( iClickNum <iSliderNavLen-iInnitLen)
+                {
+                    iClickNum++;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum+1).position().left});
+                }
+            });
+            $('.sidernav_slide a').click(function(){
+
+                $('.sidernav_slide a').removeClass('on');
+                $(this).addClass('on');
+
+            });
+
+            $('.btn_group a').click(function(){
+                $('.btn_group a').removeClass('btn_active');
+                $(this).addClass('btn_active');
+            });
+
+            $('.nav_btn_hr_dropmenu a').click(function(){
+                $('.nav_btn_hr i').html($(this).html());
+            });
+
+
+
+
+            /*筛选*/
+
+        });
+
+
+    </script>
+    <title></title>
+</head>
+<body>
+<nav class="sidernav">
+    <div class="btn_group">
+        <a class="btn_new btn_active"></a>
+        <a class="btn_hot"></a>
+        <a class="btn_best"></a>
+    </div>
+    <div class="nav_wrap">
+        <div class="sidernav_box">
+
+            <ul class="sidernav_slide" id="sidernav_slide">
+                <li><a class="on">全部</a></li>
+                <li><a>专业领域</a></li>
+                <li><a>产品领域</a></li>
+                <li><a>流程变革</a></li>
+                <li><a>公司知识</a></li>
+                <li><a>通用技能</a></li>
+                <li><a>管理与领导力</a></li>
+                <li><a>其它</a></li>
+            </ul>
+        </div>
+        <a class="nav_btn_next">next</a>
+    </div>
+    <div class="nav_btn_hr"><i>筛选</i>
+        <span></span>
+        <section class="nav_btn_hr_dropmenu">
+            <a>全部</a>
+            <a>财经</a>
+            <a>人力资源</a>
+            <a>营销</a>
+            <a>项目管理</a>
+            <a>采购</a>
+            <a>技术</a>
+            <a>公共关系</a>
+            <a>法务</a>
+            <a>供应链</a>
+            <a>行政&服务商务</a>
+            <a>流程质量运营</a>
+        </section>
+    </div>
+
+</nav>
+
+<article class="kontext subject">
+<div class="subject_box clearfix layer one show">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer two">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer three">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+</article>
+</body>
+<script>
+    // 获取运动box
+    var k = kontext( document.querySelector( '.kontext' ) );
+    var bulletsContainer = document.body.querySelector( '.bullets' );
+
+    // 导航支持
+    var bullet = document.getElementById('sidernav_slide').getElementsByTagName('a');
+    for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+        bullet[i].className = i === 0 ? 'on' : '';
+        bullet[i].setAttribute( 'index', i );
+        bullet[i].onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) ;
+            for( var i = 0, len = k.getTotal(); i < len; i++ ){
+                bullet[i].className='';
+                this.className='on';
+            }
+        };
+        bullet[i].ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+
+    }
+
+    /*触碰动作*/
+
+
+    var touchX = 0;
+    var touchConsumed = false;
+
+    document.addEventListener( 'touchstart', function( event ) {
+        touchConsumed = false;
+        lastX = event.touches[0].clientX;
+    }, false );
+
+    document.addEventListener( 'touchmove', function( event ) {
+        event.preventDefault();
+
+        if( !touchConsumed ) {
+            if( event.touches[0].clientX > lastX + 10 ) {
+                k.prev();
+                touchConsumed = true;
+            }
+            else if( event.touches[0].clientX < lastX - 10 ) {
+                k.next();
+                touchConsumed = true;
+            }
+        }
+    }, false );
+</script>
+</html><!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content=”telephone=no” name=”format-detection” />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <script type="text/javascript" src="../js/zepto.js"></script>
+    <script src="../js/kontext.js"></script>
+    <script>
+        $(function(){
+
+            $('.nav_btn_hr').click(function(){
+                $('.nav_btn_hr_dropmenu').toggleClass('dropmenu_animation');
+            });
+
+            var iSliderNavLen=$('.sidernav_slide a').length;
+            var iInnitLen=6;
+            var iClickNum=0;
+            $('.nav_btn_next').click(function(){
+                if( iClickNum <iSliderNavLen-iInnitLen)
+                {
+                    iClickNum++;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum+1).position().left});
+                }
+            });
+
+            $('.sidernav_slide').swipeRight(function(){
+                if(iClickNum>0)
+                {
+                    iClickNum--;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum).position().left});
+                }
+            });
+
+            $('.sidernav_slide').swipeLeft(function(){
+                if( iClickNum <iSliderNavLen-iInnitLen)
+                {
+                    iClickNum++;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum+1).position().left});
+                }
+            });
+            $('.sidernav_slide a').click(function(){
+
+                $('.sidernav_slide a').removeClass('on');
+                $(this).addClass('on');
+
+            });
+
+            $('.btn_group a').click(function(){
+                $('.btn_group a').removeClass('btn_active');
+                $(this).addClass('btn_active');
+            });
+
+            $('.nav_btn_hr_dropmenu a').click(function(){
+                $('.nav_btn_hr i').html($(this).html());
+            });
+
+
+
+
+            /*筛选*/
+
+        });
+
+
+    </script>
+    <title></title>
+</head>
+<body>
+<nav class="sidernav">
+    <div class="btn_group">
+        <a class="btn_new btn_active"></a>
+        <a class="btn_hot"></a>
+        <a class="btn_best"></a>
+    </div>
+    <div class="nav_wrap">
+        <div class="sidernav_box">
+
+            <ul class="sidernav_slide" id="sidernav_slide">
+                <li><a class="on">全部</a></li>
+                <li><a>专业领域</a></li>
+                <li><a>产品领域</a></li>
+                <li><a>流程变革</a></li>
+                <li><a>公司知识</a></li>
+                <li><a>通用技能</a></li>
+                <li><a>管理与领导力</a></li>
+                <li><a>其它</a></li>
+            </ul>
+        </div>
+        <a class="nav_btn_next">next</a>
+    </div>
+    <div class="nav_btn_hr"><i>筛选</i>
+        <span></span>
+        <section class="nav_btn_hr_dropmenu">
+            <a>全部</a>
+            <a>财经</a>
+            <a>人力资源</a>
+            <a>营销</a>
+            <a>项目管理</a>
+            <a>采购</a>
+            <a>技术</a>
+            <a>公共关系</a>
+            <a>法务</a>
+            <a>供应链</a>
+            <a>行政&服务商务</a>
+            <a>流程质量运营</a>
+        </section>
+    </div>
+
+</nav>
+
+<article class="kontext subject">
+<div class="subject_box clearfix layer one show">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer two">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer three">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+</article>
+</body>
+<script>
+    // 获取运动box
+    var k = kontext( document.querySelector( '.kontext' ) );
+    var bulletsContainer = document.body.querySelector( '.bullets' );
+
+    // 导航支持
+    var bullet = document.getElementById('sidernav_slide').getElementsByTagName('a');
+    for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+        bullet[i].className = i === 0 ? 'on' : '';
+        bullet[i].setAttribute( 'index', i );
+        bullet[i].onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) ;
+            for( var i = 0, len = k.getTotal(); i < len; i++ ){
+                bullet[i].className='';
+                this.className='on';
+            }
+        };
+        bullet[i].ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+
+    }
+
+    /*触碰动作*/
+
+
+    var touchX = 0;
+    var touchConsumed = false;
+
+    document.addEventListener( 'touchstart', function( event ) {
+        touchConsumed = false;
+        lastX = event.touches[0].clientX;
+    }, false );
+
+    document.addEventListener( 'touchmove', function( event ) {
+        event.preventDefault();
+
+        if( !touchConsumed ) {
+            if( event.touches[0].clientX > lastX + 10 ) {
+                k.prev();
+                touchConsumed = true;
+            }
+            else if( event.touches[0].clientX < lastX - 10 ) {
+                k.next();
+                touchConsumed = true;
+            }
+        }
+    }, false );
+</script>
+</html><!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content=”telephone=no” name=”format-detection” />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <script type="text/javascript" src="../js/zepto.js"></script>
+    <script src="../js/kontext.js"></script>
+    <script>
+        $(function(){
+
+            $('.nav_btn_hr').click(function(){
+                $('.nav_btn_hr_dropmenu').toggleClass('dropmenu_animation');
+            });
+
+            var iSliderNavLen=$('.sidernav_slide a').length;
+            var iInnitLen=6;
+            var iClickNum=0;
+            $('.nav_btn_next').click(function(){
+                if( iClickNum <iSliderNavLen-iInnitLen)
+                {
+                    iClickNum++;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum+1).position().left});
+                }
+            });
+
+            $('.sidernav_slide').swipeRight(function(){
+                if(iClickNum>0)
+                {
+                    iClickNum--;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum).position().left});
+                }
+            });
+
+            $('.sidernav_slide').swipeLeft(function(){
+                if( iClickNum <iSliderNavLen-iInnitLen)
+                {
+                    iClickNum++;
+                    $('.sidernav_slide').animate({left:-$('.sidernav_slide a').eq(iClickNum+1).position().left});
+                }
+            });
+            $('.sidernav_slide a').click(function(){
+
+                $('.sidernav_slide a').removeClass('on');
+                $(this).addClass('on');
+
+            });
+
+            $('.btn_group a').click(function(){
+                $('.btn_group a').removeClass('btn_active');
+                $(this).addClass('btn_active');
+            });
+
+            $('.nav_btn_hr_dropmenu a').click(function(){
+                $('.nav_btn_hr i').html($(this).html());
+            });
+
+
+
+
+            /*筛选*/
+
+        });
+
+
+    </script>
+    <title></title>
+</head>
+<body>
+<nav class="sidernav">
+    <div class="btn_group">
+        <a class="btn_new btn_active"></a>
+        <a class="btn_hot"></a>
+        <a class="btn_best"></a>
+    </div>
+    <div class="nav_wrap">
+        <div class="sidernav_box">
+
+            <ul class="sidernav_slide" id="sidernav_slide">
+                <li><a class="on">全部</a></li>
+                <li><a>专业领域</a></li>
+                <li><a>产品领域</a></li>
+                <li><a>流程变革</a></li>
+                <li><a>公司知识</a></li>
+                <li><a>通用技能</a></li>
+                <li><a>管理与领导力</a></li>
+                <li><a>其它</a></li>
+            </ul>
+        </div>
+        <a class="nav_btn_next">next</a>
+    </div>
+    <div class="nav_btn_hr"><i>筛选</i>
+        <span></span>
+        <section class="nav_btn_hr_dropmenu">
+            <a>全部</a>
+            <a>财经</a>
+            <a>人力资源</a>
+            <a>营销</a>
+            <a>项目管理</a>
+            <a>采购</a>
+            <a>技术</a>
+            <a>公共关系</a>
+            <a>法务</a>
+            <a>供应链</a>
+            <a>行政&服务商务</a>
+            <a>流程质量运营</a>
+        </section>
+    </div>
+
+</nav>
+
+<article class="kontext subject">
+<div class="subject_box clearfix layer one show">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer two">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer three">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="subject_box clearfix layer">
+    <ul class="subject_list">
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <img src="../images/topic_subject_img.png" />
+                <div class="subject_item_info">
+                    <p>After Effects-Film synthesis and effects</p>
+                    <span class="icon_article_hot">100,100</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+</article>
+</body>
+<script>
+    // 获取运动box
+    var k = kontext( document.querySelector( '.kontext' ) );
+    var bulletsContainer = document.body.querySelector( '.bullets' );
+
+    // 导航支持
+    var bullet = document.getElementById('sidernav_slide').getElementsByTagName('a');
+    for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+        bullet[i].className = i === 0 ? 'on' : '';
+        bullet[i].setAttribute( 'index', i );
+        bullet[i].onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) ;
+            for( var i = 0, len = k.getTotal(); i < len; i++ ){
+                bullet[i].className='';
+                this.className='on';
+            }
+        };
+        bullet[i].ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+
+    }
+
+    /*触碰动作*/
+
+
+    var touchX = 0;
+    var touchConsumed = false;
+
+    document.addEventListener( 'touchstart', function( event ) {
+        touchConsumed = false;
+        lastX = event.touches[0].clientX;
+    }, false );
+
+    document.addEventListener( 'touchmove', function( event ) {
+        event.preventDefault();
+
+        if( !touchConsumed ) {
+            if( event.touches[0].clientX > lastX + 10 ) {
+                k.prev();
+                touchConsumed = true;
+            }
+            else if( event.touches[0].clientX < lastX - 10 ) {
+                k.next();
+                touchConsumed = true;
+            }
+        }
+    }, false );
+</script>
+</html>
